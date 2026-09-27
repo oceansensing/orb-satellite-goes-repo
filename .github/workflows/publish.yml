@@ -3,8 +3,8 @@
 # and to Cloudflare R2. Written by the site's pipeline/scaffold/new-origin.py
 # from the sibling data repositories' workflow.
 #
-# **Dispatch-only until a dispatched run has published a tree**: prove the
-# pipeline, THEN uncomment the schedule below, in the same commit as the docs.
+# **Scheduled since 2026-09-27**, after the first dispatched run published a
+# tree and it was read live (the ritual: dispatch first, schedule second).
 # `status/status.json` reports `schedule: null` until then, and the site's
 # watchdog names an origin with no schedule on sight.
 #
@@ -20,8 +20,8 @@ on:
         description: 'Rebuild even if the probe says the tree is current'
         type: boolean
         default: false
-  # schedule:
-  #   - cron: '3 2,8,14,20 * * *'
+  schedule:
+    - cron: '3 2,8,14,20 * * *'
 
 permissions: {}
 
