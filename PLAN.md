@@ -23,3 +23,12 @@ schedule was turned on in the same commit as this entry.
 
 1. Re-measure `max_age_hours` after a week of scheduled runs.
 2. The server's other GOES products, as the owner names them.
+
+## The workflow's packages come from the site — 2026-09-27
+
+The publish workflow installs `site/scripts/requirements-erddap.txt`, one file
+per fetcher family, instead of naming packages in its own `pip install`
+line. Dependabot reads requirements files and never a workflow line: an
+inline pin elsewhere had carried `requests` 2.32.3, a version with two
+advisories, unflagged. The site's `check:docs` now refuses an inline package
+here. Confirmed by a dispatched run, green on build, Pages and R2.
