@@ -1,0 +1,25 @@
+# What this repository publishes: the University of Delaware ORB lab's daily GOES-19 SST
+# composite from its ERDDAP, over 16-52 N, 100-50 W, regridded to 0.04 degree by the site's
+# scripts/fetch-erddap.py. Published, not drawn on the website's map.
+#
+# **The budget.** One composite a day, stamped about 10:55 UTC; the newest was 30 hours old on
+# 2026-09-27. 60 hours is a normal day's lag plus one missed day. Re-measure after a week.
+
+[contract]
+check = ["node", "scripts/test-schema.mjs"]
+roots = ["node", "scripts/test-schema.mjs", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+[steps.erddap]
+cmd = ["python3", "scripts/fetch-erddap.py", "--only=sst-goes"]
+lane = "ud-orb-erddap"
+
+[products.sst-goes]
+title = "GOES-19 daily SST composite (UD ORB)"
+step = "erddap"
+roots = ["sst-goes.json"]
+writes = ["sst-goes.json"]
+max_age_hours = 60
+namespace = ["python3", "scripts/fetch-erddap.py", "--namespace", "--only=sst-goes"]
