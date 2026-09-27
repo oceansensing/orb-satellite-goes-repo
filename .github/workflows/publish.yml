@@ -71,7 +71,7 @@ jobs:
         with:
           node-version: '22'
       - name: Install what the fetchers need
-        run: pip install --no-cache-dir -r site/scripts/requirements-selftest.txt
+        run: pip install --no-cache-dir -r site/scripts/requirements-erddap.txt
       - name: Unit-test the orchestrator
         working-directory: site
         run: python3 pipeline/test_orchestrate.py
