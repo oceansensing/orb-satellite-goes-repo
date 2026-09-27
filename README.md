@@ -23,7 +23,7 @@ The orchestrator (the site's private `pipeline/`), the fetchers and the
 published-file contract all come from `oceansensing.github.io`, checked out at
 run time. This repository carries `pipeline/products.toml` and its publish
 workflow, and nothing else executable. Each run publishes to GitHub Pages and
-to Cloudflare R2 from one build. Related repositories: the other University of Delaware ORB repositories, `orb-satellite-viirs-repo`, `orb-satellite-goes-repo` and `orb-satellite-pace-repo`.
+to Cloudflare R2 from one build. Related repositories: the other University of Delaware ORB repositories, `orb-satellite-viirs-repo` and `orb-satellite-pace-repo`.
 
 **Which document gets what, and what "update docs" means across all
 twenty repositories, is the doctrine block at the top of `CLAUDE.md`**: the
