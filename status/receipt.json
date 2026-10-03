@@ -1,0 +1,16 @@
+{
+ "schema": 1,
+ "generated": "2026-10-03T15:06:01Z",
+ "mode": "full",
+ "fates": {
+  "sst-goes": "fresh"
+ },
+ "reasons": {},
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [
+  "sst-goes: nearest frame is 124.2 h old, past its 60 h budget \u2014 upstream has nothing newer"
+ ],
+ "behind": []
+}
