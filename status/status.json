@@ -1,0 +1,38 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-24T14:17:55Z",
+ "mode": "full",
+ "run": {
+  "id": "40101809774",
+  "url": "https://github.com/oceansensing/orb-satellite-goes-repo/actions/runs/40101809774"
+ },
+ "schedule": {
+  "crons": [
+   "3 2,8,14,20 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "sst-goes": {
+   "title": "GOES-19 daily SST composite (UD ORB)",
+   "roots": [
+    "sst-goes.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-24T14:17:55Z",
+   "updated": "2026-10-24T08:24:42Z",
+   "hour": "2026-10-23T10:55:06Z",
+   "modelRun": null,
+   "source": "University of Delaware ORB, NOAA GOES-19",
+   "hours": [
+    "2026-10-23T10:55:06Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 27.38,
+   "nearestOffsetHours": 27.38
+  }
+ }
+}
