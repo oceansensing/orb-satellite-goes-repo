@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sst-goes",
+ "title": "GOES-19 daily SST composite (UD ORB)",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-07T08:16:29Z",
+ "updated": "2026-11-07T08:16:29Z",
+ "hour": "2026-11-06T10:55:06Z",
+ "modelRun": null,
+ "source": "University of Delaware ORB, NOAA GOES-19",
+ "hours": [
+  "2026-11-06T10:55:06Z"
+ ],
+ "files": {
+  "sst-goes.json": {
+   "bytes": 6059071,
+   "sha256": "9d0b851859b4c36c89be9e0d0220088a976200dbe11c8470f1a37a9834d1503d"
+  }
+ }
+}
