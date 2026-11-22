@@ -25,9 +25,9 @@ run time. This repository carries `pipeline/products.toml` and its publish
 workflow, and nothing else executable. Each run publishes to GitHub Pages and
 to Cloudflare R2 from one build. Related repositories: the other University of Delaware ORB repositories, `orb-satellite-viirs-repo` and `orb-satellite-pace-repo`.
 
-**Which document gets what, and what "update docs" means across all
-twenty repositories, is the doctrine block at the top of `CLAUDE.md`**: the
-same text in all twenty, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`**: the
+same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 
